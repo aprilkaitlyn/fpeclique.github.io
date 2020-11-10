@@ -3,7 +3,7 @@
   font-family: Autery;
       src: url(‘Autery.tff’) format(‘truetype’); }
 
-html {background-color: rgb(77.3, 54.5, 90.6); }
+html {background-color: black; }
 
 h1 {font-family: Autery, cursive;
       font-size: 12px;
