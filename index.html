@@ -12,8 +12,9 @@
   <h1>Sailor Guardian Race</h1>
   <canvas id="canvas" width=100%></canvas>
   <div id="lights">
-  <img src="lights_green.png" width=100px id="imgClickAndChange" onclick="changeImage()/>
-    <script>
+  <img src="lights_red.png" width=100px id="imgClickAndChange" onclick="changeImage()/>
+  </div>
+  <script>
     function changeImage() {
 
         if (document.getElementById("imgClickAndChange").src == "lights_red.png") 
@@ -26,7 +27,6 @@
         }
     }
 </script>
-  </div>
 <script>
   var canvas = document.getElementById("canvas");
   canvas.width = canvas.scrollWidth;
