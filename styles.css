@@ -3,9 +3,10 @@
   font-family: Autery;
       src: url(‘Autery.tff’) format(‘truetype’); }
 
-html {background-image: url(sailor_background.png) cover; }
+html {background-image: url(sailor_background.png);
+      background-size: cover;}
 
 h1 {font-family: Autery, cursive;
-      font-size: 40px;
+      font-size: 80px;
       font-color: white;
       text-align: center; }
