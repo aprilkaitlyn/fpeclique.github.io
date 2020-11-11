@@ -5,7 +5,7 @@
 
 html {background-image: url(sailor_background.png) cover; }
 
-body > h1 {font-family: Autery, cursive;
+h1 {font-family: Autery, cursive;
       font-size: 40px;
       font-color: white;
       text-align: center; }
