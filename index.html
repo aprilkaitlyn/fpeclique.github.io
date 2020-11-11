@@ -10,12 +10,26 @@
   
 <body>
   <h1>Sailor Guardian Race</h1>
+  <canvas id="canvas" style="border: 1px solid; width: 800px; height: 800px"></canvas>
   <div id="lights">
   <img src="lights_red"/>
   <img src="lights_yellow"/>
   <img src="lights_green"/>
   </div>
-
+<script>
+  var canvas = document.getElementById("canvas");
+  canvas.width = canvas.scrollWidth;
+  canvas.height = canvas.scrollHeight;
+  var cx = canvas.getContext('2d');
+  var square = {x:0,y:0, width:100, height:100}
+  function draw() {
+    cx.clearRect(0,0,canvas.width,canvas.height);
+    square.x += 1;
+    cx.fillRect(square.x, square.y, square.width, square.height)
+    window.requestAnimationFrame(draw);
+  }
+  draw();
+  </script>
 </body>
 </html>
 
