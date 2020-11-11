@@ -1,7 +1,7 @@
 @charset = "utf-8";
 @font-face {font-family: Autery; src: url(‘Autery.tff’) format(‘truetype’);}
 
-html {background: url(sailor_background.jpg) 100% / cover fixed; }
+html {background: url('sailor_background.jpg') 100% / cover fixed; }
 
 
 h1 {font-family: Autery, cursive;
