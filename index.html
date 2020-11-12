@@ -15,7 +15,7 @@
   <img src="lights_red.png" id="light" width=100px onclick="changeLight()"/>
   </div>
 <script>
-windows.onload = function changeLight(e) {
+function changeLight(e) {
    if (document.getElementById("light").src == "lights_red.png") 
         {
             document.getElementById("light").src = "lights_green.png";
