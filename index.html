@@ -6,6 +6,7 @@
   <title>Sailor Guardian Race</title>
   <link rel="stylesheet" href="styles.css" type="text/css"/>
   <link rel="icon" href="sailor_icon.png" type="image/png">
+  <script src="sailor_race.js"></script>
 </head>
   
 <body>
@@ -27,20 +28,7 @@
         }
     }
 </script>
-<script>
-  var canvas = document.getElementById("canvas");
-  canvas.width = canvas.scrollWidth;
-  canvas.height = canvas.scrollHeight;
-  var cx = canvas.getContext('2d');
-  var square = {x:0,y:0, width:100, height:100}
-  function draw() {
-    cx.clearRect(0,0,canvas.width,canvas.height);
-    square.x += 1;
-    cx.fillRect(square.x, square.y, square.width, square.height)
-    window.requestAnimationFrame(draw);
-  }
-  draw();
-  </script>
+
 </body>
 </html>
 
