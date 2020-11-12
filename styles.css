@@ -5,11 +5,10 @@ html {background: url('sailor_background.jpg') 100% / cover fixed;
       background-color: rgb(254,202,255);
       cursor: url(sailor_icon.png), pointer;}
 
-
 h1 {font-family: Autery, cursive;
       font-size: 80px;
       color: rgb(255, 253, 226);
-      text-align: center; }
+      text-align: center;}
 
 img#light {
       position: absolute;
@@ -19,35 +18,34 @@ img#light {
 #container {
   width: screen.width;
   height: 100%;
-  position: relative;
-}
+  position: relative; }
+
 #animate {
   width: 100px;
-      height: 100px;
+  height: 100px;
   top: 0px;
-  position: absolute;
-}
+  position: absolute;}
+
 #animate2 {
   width: 100px;
   height: 100px;
-      top: 130px;
-  position: absolute;
-}
+  top: 120px;
+  position: absolute;}
+
 #animate3 {
   width: 100px;
-      height: 100px;
-  top: 230px;
-  position: absolute;
-}
+  height: 100px;
+  top: 240px;
+  position: absolute;}
+
 #animate4 {
   width: 100px;
-      height: 100px;
-  top: 330px;
-  position: absolute;
-}
+  height: 100px;
+  top: 355px;
+  position: absolute;}
+
 #animate5 {
   width: 100px;
-      height: 100px;
-  top: 430px;
-  position: absolute;
-}
+  height: 100px;
+  top: 475px;
+  position: absolute;}
