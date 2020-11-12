@@ -6,7 +6,6 @@
   <title>Sailor Guardian Race</title>
   <link rel="stylesheet" href="styles.css" type="text/css"/>
   <link rel="icon" href="sailor_icon.png" type="image/png">
-  <script src="sailor_race.js"></script>
 </head>
   
 <body>
@@ -15,7 +14,20 @@
   <div id="lights">
   <img src="lights_red.png" id="light" width=100px onclick="changeLight()"/>
   </div>
-</script>
+<script>
+  var clicky = document.getElementById("light");
+clicky.addEventListener('click',changeLight);
+windows.onload = function changeLight(e) {
+   if (document.getElementById("light").src == "lights_red.png") 
+        {
+            document.getElementById("light").src = "lights_green.png";
+        }
+        else 
+        {
+            document.getElementById("light").src = "lights_red.png";
+        }
+}
+  </script>
 
 </body>
 </html>
