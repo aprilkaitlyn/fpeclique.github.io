@@ -24,30 +24,30 @@ img#light {
 #animate {
   width: 100px;
       height: 100px;
-  top: 50px;
+  top: 0px;
   position: absolute;
 }
 #animate2 {
   width: 100px;
   height: 100px;
-      top: 150px;
+      top: 130px;
   position: absolute;
 }
 #animate3 {
   width: 100px;
       height: 100px;
-  top: 250px;
+  top: 230px;
   position: absolute;
 }
 #animate4 {
   width: 100px;
       height: 100px;
-  top: 350px;
+  top: 330px;
   position: absolute;
 }
 #animate5 {
   width: 100px;
       height: 100px;
-  top: 450px;
+  top: 430px;
   position: absolute;
 }
