@@ -11,10 +11,11 @@
 <body>
   <h1>Sailor Guardian Race</h1>
   <div id="lights">
-  <img src="lights_red.png" id="light" width=100px onclick="changeLight(); myMove();"/>
+  <img src="lights_red.png" id="light" width=100px onclick="changeLight(); myMove(); myMove2();"/>
   </div>
    <div id ="container">
   <img src="sailor_icon.png" id ="animate""/>
+    <img src="sailor_icon.png" id ="animate2""/>                                       
 </div>
 <script>
 function changeLight(e) {
@@ -24,6 +25,20 @@ function changeLight(e) {
   var elem = document.getElementById("animate");
   var pos = 0;
   var id = setInterval(frame, 5);
+  var end = (window.innerWidth - 100);
+  function frame() {
+    if (pos == end) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+  function myMove() {
+  var elem = document.getElementById("animate2");
+  var pos = 0;
+  var id = setInterval(frame, 3);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
