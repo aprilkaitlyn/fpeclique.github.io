@@ -10,7 +10,6 @@
   
 <body>
   <h1>Sailor Guardian Race</h1>
-  <canvas id="canvas" width=100%></canvas>
   <div id="lights">
   <img src="lights_red.png" id="light" width=100px onclick="changeLight()"/>
   </div>
@@ -19,6 +18,13 @@ function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
 </script>
+  <img src="sailor_icon.png" id="test" onclick="move()"/>
+  <script>
+    function move(e) {
+      document.getElementById("test).x +=1
+    }
+</script>
+ 
 
 </body>
 </html>
