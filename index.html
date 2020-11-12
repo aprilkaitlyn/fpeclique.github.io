@@ -30,10 +30,26 @@ function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
   
+function shuffle(array) {
+  var i = array.length,
+      j = 0,
+      temp;
+
+    while (i--) {
+        j = Math.floor(Math.random() * (i+1));
+      // swap randomly chosen element with current element
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+var ranNums = shuffle([5,6,7,8,9]);
+  
   function myMove() {
   var elem = document.getElementById("animate");
   var pos = 0;
-  var id = setInterval(frame, 6);
+  var id = setInterval(frame, ranNums);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -53,6 +69,7 @@ function changeLight(e) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
+      document.getElementById("winner").src = "sailorjupiter.png";
     } else {
       pos++;
       elem.style.left = pos + 'px';
@@ -67,6 +84,7 @@ function changeLight(e) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
+      document.getElementById("winner").src = "sailormars.png";
     } else {
       pos++;
       elem.style.left = pos + 'px';
@@ -81,6 +99,7 @@ function changeLight(e) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
+      document.getElementById("winner").src = "sailormercury.png";
     } else {
       pos++;
       elem.style.left = pos + 'px';
@@ -95,6 +114,7 @@ function changeLight(e) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
+      document.getElementById("winner").src = "sailorvenus.png";
     } else {
       pos++;
       elem.style.left = pos + 'px';
