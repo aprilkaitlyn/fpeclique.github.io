@@ -23,27 +23,27 @@ img#light {
 }
 #animate {
   width: 100px;
-  height: 100px;
+  height: 50px;
   position: absolute;
 }
 #animate2 {
   width: 100px;
-  height: 100px;
-      top: 500px;
+  height: 150px;
+      top: 0px;
   position: absolute;
 }
 #animate3 {
   width: 100px;
-  height: 100px;
+  height: 250px;
   position: absolute;
 }
 #animate4 {
   width: 100px;
-  height: 100px;
+  height: 350px;
   position: absolute;
 }
 #animate5 {
   width: 100px;
-  height: 100px;
+  height: 450px;
   position: absolute;
 }
