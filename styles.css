@@ -2,7 +2,8 @@
 @font-face {font-family: Autery; src: url(‘Autery.tff’) format(‘truetype’);}
 
 html {background: url('sailor_background.jpg') 100% / cover fixed;
-      background-color: rgb(254,202,255);}
+      background-color: rgb(254,202,255);
+      cursor: url('sailor_icon.png');}
 
 
 h1 {font-family: Autery, cursive;
