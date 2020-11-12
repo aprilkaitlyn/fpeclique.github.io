@@ -1,8 +1,7 @@
 "use strict";
 
   var canvas = document.getElementById("canvas");
-  canvas.width = canvas.scrollWidth;
-  canvas.height = canvas.scrollHeight;
+
   var cx = canvas.getContext('2d');
   var square = {x:0,y:0, width:100, height:100}
   function draw() {
