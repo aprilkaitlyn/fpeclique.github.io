@@ -21,6 +21,10 @@
   <img src="venus_icon.png" id ="animate5"/> 
 </div>
   
+<div>
+  <img src="" id="winner"/>
+  </div>
+  
 <script>
 function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
@@ -34,7 +38,7 @@ function changeLight(e) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
-      document.getElementById("light").src = "lights_red.png"; 
+      document.getElementById("winner").src = "sailormoonwins.png"; 
     } else {
       pos++;
       elem.style.left = pos + 'px';
