@@ -17,7 +17,7 @@ img#light {
       right: 200px;}
 
 #container {
-  width: 100%;
+  width: screen.width;
   height: 100%;
   position: relative;
 }
