@@ -11,18 +11,16 @@
 <body>
   <h1>Sailor Guardian Race</h1>
   <div id="lights">
-  <img src="lights_red.png" id="light" width=100px onclick="changeLight()"/>
+  <img src="lights_red.png" id="light" width=100px onclick="changeLight(); myMove();"/>
   </div>
+   <div id ="container">
+  <img src="sailor_icon.png" id ="animate""/>
+</div>
 <script>
 function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
-  </script>
- <div id ="container">
-  <img src="sailor_icon.png" id ="animate" onclick="myMove()"/>
-</div>
-  <script>
-function myMove() {
+  function myMove() {
   var elem = document.getElementById("animate");
   var pos = 0;
   var id = setInterval(frame, 5);
@@ -37,6 +35,7 @@ function myMove() {
   }
 }
   </script>
+
 </body>
 </html>
 
