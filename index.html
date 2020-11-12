@@ -18,13 +18,14 @@
     <img src="sailor_icon.png" id ="animate2"/>                                       
 </div>
 <script>
+var speed = Math.floor(Math.Random() * 5) + 1;
 function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
   function myMove() {
   var elem = document.getElementById("animate");
   var pos = 0;
-  var id = setInterval(frame, 5);
+  var id = setInterval(frame, speed);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -38,7 +39,7 @@ function changeLight(e) {
   function myMove2() {
   var elem = document.getElementById("animate2");
   var pos = 0;
-  var id = setInterval(frame, 3);
+  var id = setInterval(frame, speed);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -50,7 +51,5 @@ function changeLight(e) {
   }
 }
   </script>
-
 </body>
 </html>
-
