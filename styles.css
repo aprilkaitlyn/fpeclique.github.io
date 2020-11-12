@@ -11,3 +11,6 @@ h1 {font-family: Autery, cursive;
       color: rgb(255, 253, 226);
       text-align: center; }
 
+img.light {
+      position: absolute;
+      right: 20px; }
