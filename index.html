@@ -15,20 +15,20 @@
   </div>
    <div id ="container">
   <img src="sailor_icon.png" id ="animate"/>
-    <img src="jupiter_icon.png" id ="animate2"/> 
-     <img src="mars_icon.png" id ="animate3"/> 
-     <img src="mercury_icon.png" id ="animate4"/> 
-     <img src="venus_icon.png" id ="animate5"/> 
+  <img src="jupiter_icon.png" id ="animate2"/> 
+  <img src="mars_icon.png" id ="animate3"/> 
+  <img src="mercury_icon.png" id ="animate4"/> 
+  <img src="venus_icon.png" id ="animate5"/> 
 </div>
+  
 <script>
-var speed = Math.floor(Math.Random() * 5) + 1;
 function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
   function myMove() {
   var elem = document.getElementById("animate");
   var pos = 0;
-  var id = setInterval(frame, 5);
+  var id = setInterval(frame, 10);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -42,7 +42,7 @@ function changeLight(e) {
   function myMove2() {
   var elem = document.getElementById("animate2");
   var pos = 0;
-  var id = setInterval(frame, 4);
+  var id = setInterval(frame, 10);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -56,7 +56,7 @@ function changeLight(e) {
     function myMove3() {
   var elem = document.getElementById("animate3");
   var pos = 0;
-  var id = setInterval(frame, 3);
+  var id = setInterval(frame, 15);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -70,7 +70,7 @@ function changeLight(e) {
     function myMove4() {
   var elem = document.getElementById("animate4");
   var pos = 0;
-  var id = setInterval(frame, 2);
+  var id = setInterval(frame, 10);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -84,7 +84,7 @@ function changeLight(e) {
     function myMove5() {
   var elem = document.getElementById("animate5");
   var pos = 0;
-  var id = setInterval(frame, 1);
+  var id = setInterval(frame, 5);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
