@@ -29,6 +29,7 @@ img#light {
 #animate2 {
   width: 100px;
   height: 100px;
+      top: 500px;
   position: absolute;
 }
 #animate3 {
