@@ -1,6 +1,6 @@
 "use strict";
 
-document.getElementById("light").onclick = changeLight;
+document.getElementById("light").addEventListener("click",changeLight);
 windows.onload = function changeLight(e) {
    if (document.getElementById("light").src == "lights_red.png") 
         {
