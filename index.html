@@ -17,15 +17,24 @@
 function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
-</script>
-  <img src="sailor_icon.png" id="test" onclick="move()"/>
-  <script>
-    function move(e) {
-      document.getElementById("test).x +=1
-    }
-</script>
- 
 
+ <div id ="container">
+  <img src="sailor_icon.png" id ="animate" onclick="myMove()"/>
+</div>
+function myMove() {
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + 'px';
+      elem.style.left = pos + 'px';
+    }
+  }
+}
 </body>
 </html>
 
