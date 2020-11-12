@@ -26,7 +26,6 @@ function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
   
-do (
   function myMove() {
   var elem = document.getElementById("animate");
   var pos = 0;
@@ -35,6 +34,7 @@ do (
   function frame() {
     if (pos == end) {
       clearInterval(id);
+      document.getElementById("light").src = "lights_red.png"; 
     } else {
       pos++;
       elem.style.left = pos + 'px';
@@ -86,7 +86,7 @@ do (
     function myMove5() {
   var elem = document.getElementById("animate5");
   var pos = 0;
-  var id = setInterval(frame, 5);
+  var id = setInterval(frame, 8);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -97,8 +97,7 @@ do (
     }
   }
 }
-  )
-  while (pos != end)
+
   </script>
 </body>
 </html>
