@@ -11,7 +11,7 @@ h1 {font-family: Autery, cursive;
       color: rgb(255, 253, 226);
       text-align: center; }
 
-img.light {
+img#light {
       position: absolute;
       top: 20px;
       right: 100px;}
