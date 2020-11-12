@@ -26,8 +26,9 @@ function myMove() {
   var elem = document.getElementById("animate");
   var pos = 0;
   var id = setInterval(frame, 5);
+  var end = (window.innerWidth - 100);
   function frame() {
-    if (pos == window.innerWidth) {
+    if (pos == end) {
       clearInterval(id);
     } else {
       pos++;
