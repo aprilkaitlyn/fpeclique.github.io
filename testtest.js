@@ -34,40 +34,40 @@ function myMove() {
   }     
 }
 function frame2() {
-    if (pos == end) {
-      clearInterval(id);
+    if (pos2 == end) {
+      clearInterval(id2);
       document.getElementById("winner").src = "sailorjupiter.png";
     } else {
-      pos++;
-      elem.style.left = pos + 'px';
+      pos2++;
+      elem2.style.left = pos2 + 'px';
     }
 }
 
 function frame3() {
-    if (pos == end) {
-      clearInterval(id);
+    if (pos3 == end) {
+      clearInterval(id3);
       document.getElementById("winner").src = "sailormars.png";
     } else {
-      pos++;
-      elem.style.left = pos + 'px';
+      pos3++;
+      elem3.style.left = pos3 + 'px';
     }
 }
 function frame4() {
-    if (pos == end) {
-      clearInterval(id);
+    if (pos4 == end) {
+      clearInterval(id4);
       document.getElementById("winner").src = "sailormercury.png";
     } else {
-      pos++;
-      elem.style.left = pos + 'px';
+      pos4++;
+      elem4.style.left = pos + 'px';
     }
 }
 function frame5() {
-    if (pos == end) {
-      clearInterval(id);
+    if (pos5 == end) {
+      clearInterval(id5);
       document.getElementById("winner").src = "sailorvenus.png";
     } else {
-      pos++;
-      elem.style.left = pos + 'px';
+      pos5++;
+      elem5.style.left = pos5 + 'px';
     }
   }
 }
