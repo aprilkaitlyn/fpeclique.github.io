@@ -23,11 +23,12 @@ function myMove(event) {
   var id5 = setInterval(frame5, 10);
   
   var end = (window.innerWidth - 100);
+   
+  if (pos != end) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
       document.getElementById("winner").src = "sailormoonwins.png"; 
-      event.stopImmediatePropagation();
     } else {
       pos++;
       elem.style.left = pos + 'px';
@@ -71,3 +72,5 @@ function frame5() {
     }
   }
 }
+}
+else {event.stopImmediatePropagation();}
