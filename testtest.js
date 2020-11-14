@@ -18,16 +18,26 @@ function myMove(event) {
   
   var speed = Math.floor((Math.random() * 10) + 5);
    
-  var nums = [5,6,7,8,9],
-    ranNums = [],
-    i = nums.length,
-    j = 0;
+function shuffle(array) {
+    var i = array.length,
+        j = 0,
+        temp;
 
-while (i--) {
-    j = Math.floor(Math.random() * (i+1));
-    ranNums.push(nums[j]);
-    nums.splice(j,1);
+    while (i--) {
+
+        j = Math.floor(Math.random() * (i+1));
+
+        // swap randomly chosen element with current element
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+
+    }
+
+    return array;
 }
+
+var ranNums = shuffle([5, 10, 15, 20, 25]);
    
   var id = setInterval(frame, ranNums);
   var id2 = setInterval(frame2, ranNums);
