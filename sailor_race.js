@@ -42,7 +42,7 @@ function frame() { //sailor moon
        clearInterval(id3); //when someone reaches the end, stop the race
        clearInterval(id4);
        clearInterval(id5);
-       document.getElementById("winner").src = "sailormoonwins.png"; } //display winner's picture by setting image source
+       document.getElementById("winner").src = "sailormoon.jpg"; } //display winner's picture by setting image source
     else {
       pos++; //continue race
       elem.style.left = pos + 'px'; } //move guardian icon to the right
@@ -66,7 +66,7 @@ function frame3() { //sailor mars
        clearInterval(id3);
        clearInterval(id4);
        clearInterval(id5);
-       document.getElementById("winner").src = "sailormars.png"; }
+       document.getElementById("winner").src = "sailormars.jpg"; }
     else {
       pos3++;
       elem3.style.left = pos3 + 'px'; }
@@ -78,7 +78,7 @@ function frame4() { //sailor mercury
        clearInterval(id3);
        clearInterval(id4);
        clearInterval(id5);
-       document.getElementById("winner").src = "sailormercury.png"; }
+       document.getElementById("winner").src = "sailormercury.jpg"; }
     else {
       pos4++;
       elem4.style.left = pos4 + 'px'; }
@@ -90,7 +90,7 @@ function frame5() { //sailor venus
        clearInterval(id3);
        clearInterval(id4);
        clearInterval(id5);
-       document.getElementById("winner").src = "sailorvenus.png"; }
+       document.getElementById("winner").src = "sailorvenus.jpg"; }
     else {
       pos5++;
       elem5.style.left = pos5 + 'px'; }
