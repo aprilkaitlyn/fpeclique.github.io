@@ -22,14 +22,16 @@ function myMove(event) { //start the race, onclick event
   
   //set random speed between 3 & 10 for each guardian
   var speed = (Math.random() * 10) + 3;
-  var speed2 = (Math.random() * 10) + 3;
+  var speed2 = randomExcluded();
   var speed3 = (Math.random() * 10) + 3;
   var speed4 = (Math.random() * 10) + 3;
   var speed5 = (Math.random() * 10) + 3;
-  if (speed == speed2)
-  { speed2 + 0.3; }
-  if (speed3 == speed2)
-  { speed2 + 0.7; }
+
+  function randomExcluded(3, 10, speed) {
+  var n = Math.floor(Math.random() * (max-min) + min);
+  if (n >= excluded) n++;
+  return n;
+}
    
    
   
