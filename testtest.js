@@ -33,7 +33,6 @@ function myMove() {
     } else {
       pos++;
       elem.style.left = pos + 'px';
-    }
   }     
 }
 function frame2() {
