@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!--Sailor Guardian Race! ITC370 Final Project by Kaitlyn Heishman-->
 <html>
 <head>
   <meta charset="utf-8">
@@ -11,10 +11,12 @@
   
 <body>
   <h1>Sailor Guardian Race</h1>
-<div id="lights">
+<div>
+  <!--change light color & start race when clicked-->
   <img src="lights_red.png" id="light" width=100px onclick="changeLight(); myMove();"/>
 </div>
 <div id ="container">
+  <!--display the sailor guardians-->
   <img src="sailor_icon.png" id ="animate"/>
   <img src="jupiter_icon.png" id ="animate2"/> 
   <img src="mars_icon.png" id ="animate3"/> 
@@ -23,6 +25,7 @@
 </div>
   
 <div>
+  <!--display winner & restart the race when clicked-->
   <img src="" id="winner" onClick="window.location.reload();"/>
 </div>
 </body>
