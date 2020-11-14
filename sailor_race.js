@@ -4,7 +4,7 @@ function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
   
-  function myMove() {
+  function myMove(event) {
   var elem = document.getElementById("animate");
   var pos = 0;
   var id = setInterval(frame, Math.floor((Math.random() * 9) + 1));
@@ -18,6 +18,7 @@ function changeLight(e) {
       elem.style.left = pos + 'px';
     }
   }
+     event.stopImmediatePropagation();
 }
   function myMove2() {
   var elem = document.getElementById("animate2");
