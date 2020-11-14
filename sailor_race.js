@@ -9,7 +9,7 @@ function changeLight(e) {
   var pos = 0;
   var id = setInterval(frame, 5);
   var end = (window.innerWidth - 100);
-  function frame() {
+  function frame(event) {
     if (pos == end) {
       clearInterval(id);
       event.stopPropagation();
