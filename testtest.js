@@ -23,7 +23,7 @@ function myMove() {
   var id5 = setInterval(frame5, 10);
   
   var end = (window.innerWidth - 100);
-  
+  while (pos != end && pos2 != end && pos3 != end && pos4 != end && pos5 != end) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
@@ -58,7 +58,7 @@ function frame4() {
       document.getElementById("winner").src = "sailormercury.png";
     } else {
       pos4++;
-      elem4.style.left = pos + 'px';
+      elem4.style.left = pos4 + 'px';
     }
 }
 function frame5() {
@@ -70,4 +70,5 @@ function frame5() {
       elem5.style.left = pos5 + 'px';
     }
   }
+}
 }
