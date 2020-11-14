@@ -27,8 +27,11 @@ function myMove(event) {
  function frame() {
     if (pos == end) {
       clearInterval(id);
+       clearInterval(id2);
+       clearInterval(id3);
+       clearInterval(id4);
+       clearInterval(id5);
       document.getElementById("winner").src = "sailormoonwins.png"; 
-      event.stopPropagation();
     } else {
       pos++;
       elem.style.left = pos + 'px';
@@ -38,7 +41,8 @@ function frame2() {
     if (pos2 == end) {
       clearInterval(id2);
       document.getElementById("winner").src = "sailorjupiter.png";
-    } else {
+    } 
+   else {
       pos2++;
       elem2.style.left = pos2 + 'px';
     }
