@@ -4,12 +4,12 @@ function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; 
 }
   
-  function myMove() {
+  function myMove(event) {
   var elem = document.getElementById("animate");
   var pos = 0;
   var id = setInterval(frame, 5);
   var end = (window.innerWidth - 100);
-  function frame(event) {
+  function frame() {
     if (pos == end) {
       clearInterval(id);
       event.stopImmediatePropagation();
