@@ -1,57 +1,58 @@
 @charset = "utf-8";
-@font-face {font-family: Autery; src: url(‘Autery.tff’) format(‘truetype’);}
 
-html {background: url('sailor_background.jpg') 100% / cover fixed;
-      background-color: rgb(254,202,255);
-      cursor: url(sailor_icon.png), pointer;}
+@font-face {font-family: Autery; 
+            src: url(‘Autery.tff’) 
+            format(‘truetype’); } /* font for h1 heading */
 
-h1 {font-family: Autery, cursive;
-      font-size: 80px;
-      color: rgb(255, 253, 226);
-      text-align: center;}
+html { background: url('sailor_background.jpg') 100% / cover fixed;
+       background-color: rgb(254,202,255);
+       cursor: url(sailor_icon.png), pointer; }
 
-img#light {
-      position: absolute;
-      top: 30px;
-      right: 200px;}
+h1 { font-family: Autery, cursive;
+     font-size: 80px;
+     color: rgb(255, 253, 226);
+     text-align: center; }
 
-#winner {
-      width: 100%;
-position: absolute;
-z-index: 100;}
-      
+#light { position: absolute;
+         top: 30px;
+         right: 200px; }
 
-#container {
-  width: screen.width;
-  height: 100%;
-  position: relative; }
+/* make winner cover the page */
+#winner { width: 100%;
+          position: absolute;
+          z-index: 100; } 
+              
+/* make race space the size of the screen */
+#container { width: screen.width;
+             height: 100%;
+             position: relative; }
 
-#animate {
-  width: 100px;
-  height: 100px;
-  top: 0px;
-  position: absolute;}
+/* sailor moon */
+#animate { width: 100px;
+           height: 100px;
+           top: 0px;
+           position: absolute; }
 
-#animate2 {
-  width: 100px;
-  height: 100px;
-  top: 120px;
-  position: absolute;}
+/* sailor jupiter */
+#animate2 { width: 100px;
+            height: 100px;
+            top: 120px;
+            position: absolute; }
 
-#animate3 {
-  width: 100px;
-  height: 100px;
-  top: 240px;
-  position: absolute;}
+/* sailor mars */
+#animate3 { width: 100px;
+            height: 100px;
+            top: 240px;
+            position: absolute; }
 
-#animate4 {
-  width: 100px;
-  height: 100px;
-  top: 355px;
-  position: absolute;}
+/* sailor mercury */
+#animate4 { width: 100px;
+            height: 100px;
+            top: 355px;
+            position: absolute; }
 
-#animate5 {
-  width: 100px;
-  height: 100px;
-  top: 475px;
-  position: absolute;}
+/* sailor venus */
+#animate5 { width: 100px;
+            height: 100px;
+            top: 475px;
+            position: absolute; }
