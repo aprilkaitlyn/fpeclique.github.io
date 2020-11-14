@@ -16,13 +16,24 @@ function myMove(event) {
   var pos4 = 0;
   var pos5 = 0;
   
-   var speed = Math.floor((Math.random() * 10) + 5);
+  var speed = Math.floor((Math.random() * 10) + 5);
    
-  var id = setInterval(frame, 5);
-  var id2 = setInterval(frame2, speed);
-  var id3 = setInterval(frame3, 10);
-  var id4 = setInterval(frame4, 10);
-  var id5 = setInterval(frame5, 10);
+  var nums = [5,6,7,8,9],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+}
+   
+  var id = setInterval(frame, ranNums);
+  var id2 = setInterval(frame2, ranNums);
+  var id3 = setInterval(frame3, ranNums);
+  var id4 = setInterval(frame4, ranNums);
+  var id5 = setInterval(frame5, ranNums);
   
   var end = (window.innerWidth - 100);
    
