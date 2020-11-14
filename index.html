@@ -3,18 +3,21 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Sailor Guardian Race</title>
-  <link rel="stylesheet" href="sailor_styles.css" type="text/css"/>
-  <link rel="icon" href="tab_icon.png?v=1" type="image/png">
-  <script src="sailor_race.js" defer></script>
+  <title>Sailor Guardian Race</title> <!--browser tab title-->
+  <link rel="stylesheet" href="sailor_styles.css" type="text/css"/> <!--link style sheet-->
+  <link rel="icon" href="tab_icon.png?v=1" type="image/png"> <!--browser tab icon-->
+  <script src="sailor_race.js" defer></script> <!--link Javascript-->
 </head>
   
 <body>
+  <!--display race name-->
   <h1>Sailor Guardian Race</h1>
+  
 <div>
   <!--change light color & start race when clicked-->
   <img src="lights_red.png" id="light" width=100px onclick="changeLight(); myMove();"/>
 </div>
+  
 <div id ="container">
   <!--display the sailor guardians-->
   <img src="sailor_icon.png" id ="animate"/>
@@ -29,12 +32,14 @@
   <img src="" id="winner" onClick="window.location.reload();"/>
 </div>
   
-  <div>
-  <img src="sailormoon.jpg" id="winnerz"/>
-    <img src="sailormars.jpg" id="winnerz"/>
-    <img src="sailormercury.jpg" id="winnerz"/>
-    <img src="sailorjupiter.jpg" id="winnerz"/>
-    <img src="sailorvenus.jpg" id="winnerz"/>
+<div>
+  <!--load & hide winner images when page loads-->
+  <img src="sailormoon.jpg" id="guardians"/>
+  <img src="sailormars.jpg" id="guardians"/>
+  <img src="sailormercury.jpg" id="guardians"/>
+  <img src="sailorjupiter.jpg" id="guardians"/>
+  <img src="sailorvenus.jpg" id="guardians"/>
 </div>
+  
 </body>
 </html>
