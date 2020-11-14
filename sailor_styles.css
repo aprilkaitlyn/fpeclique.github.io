@@ -9,13 +9,13 @@ html { background: url('sailor_background.jpg') 100% / cover fixed;
        cursor: url(moonstick.png), pointer; }
 
 h1 { font-family: Autery, cursive;
-     font-size: 80px;
+     font-size: 400%;
      color: rgb(255, 253, 226);
      text-align: center; }
 
 #light { position: absolute;
-         top: 30px;
-         right: 200px; }
+         top: 5%;
+         right: 10%; }
 
 /* make winner cover the page */
 #winner { width: 100%;
