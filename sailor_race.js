@@ -23,7 +23,7 @@ function changeLight(e) {
   function myMove2() {
   var elem = document.getElementById("animate2");
   var pos = 0;
-  var id = setInterval(frame, Math.floor((Math.random() * 11) + 1));
+  var id = setInterval(frame, 10);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -38,7 +38,7 @@ function changeLight(e) {
     function myMove3() {
   var elem = document.getElementById("animate3");
   var pos = 0;
-  var id = setInterval(frame, Math.floor((Math.random() * 10) + 1));
+  var id = setInterval(frame, 10);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -53,7 +53,7 @@ function changeLight(e) {
     function myMove4() {
   var elem = document.getElementById("animate4");
   var pos = 0;
-  var id = setInterval(frame, Math.floor((Math.random() * 8) + 1));
+  var id = setInterval(frame, 10);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
@@ -68,7 +68,7 @@ function changeLight(e) {
     function myMove5() {
   var elem = document.getElementById("animate5");
   var pos = 0;
-  var id = setInterval(frame, Math.floor((Math.random() * 12) + 1));
+  var id = setInterval(frame, 10);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
