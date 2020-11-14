@@ -12,13 +12,14 @@ function changeLight(e) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
-      event.stopImmediatePropagation();
+      
       document.getElementById("winner").src = "sailormoonwins.png"; 
     } else {
       pos++;
       elem.style.left = pos + 'px';
     }
   }     
+     event.stopPropagation();
 }
   function myMove2() {
   var elem = document.getElementById("animate2");
