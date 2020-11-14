@@ -20,12 +20,12 @@ function myMove(event) { //start the race, onclick event
   var pos4 = 0;
   var pos5 = 0;
   
-  //set random speed between 4 & 8 for each guardian
-  var speed = Math.floor((Math.random() * 8) + 4);
-  var speed2 = Math.floor((Math.random() * 8) + 4);
-  var speed3 = Math.floor((Math.random() * 8) + 4);
-  var speed4 = Math.floor((Math.random() * 8) + 4);
-  var speed5 = Math.floor((Math.random() * 8) + 4);
+  //set random speed between 3 & 10 for each guardian
+  var speed = Math.floor((Math.random() * 10) + 3);
+  var speed2 = Math.floor((Math.random() * 10) + 3);
+  var speed3 = Math.floor((Math.random() * 10) + 3);
+  var speed4 = Math.floor((Math.random() * 10) + 3);
+  var speed5 = Math.floor((Math.random() * 10) + 3);
   
   //start movement function for each guardian, depending on their random speed
   var id = setInterval(frame, speed);
