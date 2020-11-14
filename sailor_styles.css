@@ -24,7 +24,7 @@ h1 { font-family: Autery, cursive;
 
 #winnerz { width: 100%;
           position: absolute;
-          display: hidden; }
+          display: none; }
               
 /* make race space the size of the screen */
 #container { width: screen.width;
