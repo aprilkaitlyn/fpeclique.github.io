@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sailor Guardian Race</title>
+  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  <link rel="icon" href="sailor_icon.png" type="image/png">
+</head>
+  
+<body>
+  <h1>Sailor Guardian Race</h1>
+<div id="lights">
+  <img src="lights_red.png" id="light" width=100px onclick="changeLight(); myMove(); myMove2(); myMove3(); myMove4(); myMove5();"/>
+</div>
+<div id ="container">
+  <img src="sailor_icon.png" id ="animate"/>
+  <img src="jupiter_icon.png" id ="animate2"/> 
+  <img src="mars_icon.png" id ="animate3"/> 
+  <img src="mercury_icon.png" id ="animate4"/> 
+  <img src="venus_icon.png" id ="animate5"/> 
+</div>
+  
+<div>
+  <img src="" id="winner"/>
+  </div>
+  
+<script>
+function changeLight(e) {
+   document.getElementById("light").src = "lights_green.png"; 
+}
+  
+  function myMove() {
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  var id = setInterval(frame, Math.floor((Math.random() * 9) + 1));
+  var end = (window.innerWidth - 100);
+  function frame() {
+    if (pos == end) {
+      clearInterval(id);
+      document.getElementById("winner").src = "sailormoonwins.png"; 
+    } else {
+      pos++;
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+  function myMove2() {
+  var elem = document.getElementById("animate2");
+  var pos = 0;
+  var id = setInterval(frame, Math.floor((Math.random() * 11) + 1));
+  var end = (window.innerWidth - 100);
+  function frame() {
+    if (pos == end) {
+      clearInterval(id);
+      document.getElementById("winner").src = "sailorjupiter.png";
+    } else {
+      pos++;
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+    function myMove3() {
+  var elem = document.getElementById("animate3");
+  var pos = 0;
+  var id = setInterval(frame, Math.floor((Math.random() * 10) + 1));
+  var end = (window.innerWidth - 100);
+  function frame() {
+    if (pos == end) {
+      clearInterval(id);
+      document.getElementById("winner").src = "sailormars.png";
+    } else {
+      pos++;
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+    function myMove4() {
+  var elem = document.getElementById("animate4");
+  var pos = 0;
+  var id = setInterval(frame, Math.floor((Math.random() * 8) + 1));
+  var end = (window.innerWidth - 100);
+  function frame() {
+    if (pos == end) {
+      clearInterval(id);
+      document.getElementById("winner").src = "sailormercury.png";
+    } else {
+      pos++;
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+    function myMove5() {
+  var elem = document.getElementById("animate5");
+  var pos = 0;
+  var id = setInterval(frame, Math.floor((Math.random() * 12) + 1));
+  var end = (window.innerWidth - 100);
+  function frame() {
+    if (pos == end) {
+      clearInterval(id);
+      document.getElementById("winner").src = "sailorvenus.png";
+    } else {
+      pos++;
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+
+  </script>
+</body>
+</html>
