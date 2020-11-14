@@ -16,13 +16,16 @@ function myMove(event) {
   var pos4 = 0;
   var pos5 = 0;
   
+   var speed = Math.floor((Math.random() * 10) + 5);
+   
   var id = setInterval(frame, 5);
-  var id2 = setInterval(frame2, 10);
+  var id2 = setInterval(frame2, speed);
   var id3 = setInterval(frame3, 10);
   var id4 = setInterval(frame4, 10);
   var id5 = setInterval(frame5, 10);
   
   var end = (window.innerWidth - 100);
+   
    
  function frame() {
     if (pos == end) {
@@ -39,7 +42,11 @@ function myMove(event) {
 }
 function frame2() {
     if (pos2 == end) {
-      clearInterval(id2);
+      clearInterval(id);
+       clearInterval(id2);
+       clearInterval(id3);
+       clearInterval(id4);
+       clearInterval(id5);
       document.getElementById("winner").src = "sailorjupiter.png";
     } 
    else {
@@ -50,7 +57,11 @@ function frame2() {
 
 function frame3() {
     if (pos3 == end) {
-      clearInterval(id3);
+      clearInterval(id);
+       clearInterval(id2);
+       clearInterval(id3);
+       clearInterval(id4);
+       clearInterval(id5);
       document.getElementById("winner").src = "sailormars.png";
     } else {
       pos3++;
@@ -59,7 +70,11 @@ function frame3() {
 }
 function frame4() {
     if (pos4 == end) {
-      clearInterval(id4);
+      clearInterval(id);
+       clearInterval(id2);
+       clearInterval(id3);
+       clearInterval(id4);
+       clearInterval(id5);
       document.getElementById("winner").src = "sailormercury.png";
     } else {
       pos4++;
@@ -68,7 +83,11 @@ function frame4() {
 }
 function frame5() {
     if (pos5 == end) {
-      clearInterval(id5);
+      clearInterval(id);
+       clearInterval(id2);
+       clearInterval(id3);
+       clearInterval(id4);
+       clearInterval(id5);
       document.getElementById("winner").src = "sailorvenus.png";
     } else {
       pos5++;
