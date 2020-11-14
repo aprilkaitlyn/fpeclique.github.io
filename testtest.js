@@ -24,8 +24,6 @@ function myMove() {
   
   var end = (window.innerWidth - 100);
   
-  do {
-  
   function frame() {
     if (pos == end) {
       clearInterval(id);
@@ -72,6 +70,3 @@ function frame5() {
       elem.style.left = pos + 'px';
     }
   }
-}
-while (pos != end && pos2 != end && pos3 != end && pos4 != end && pos5 != end);
-}
