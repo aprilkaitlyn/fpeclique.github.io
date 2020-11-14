@@ -70,3 +70,4 @@ function frame5() {
       elem.style.left = pos + 'px';
     }
   }
+}
