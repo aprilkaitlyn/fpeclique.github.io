@@ -7,18 +7,18 @@ function changeLight(e) {
   function myMove(event) {
   var elem = document.getElementById("animate");
   var pos = 0;
-  var id = setInterval(frame, Math.floor((Math.random() * 9) + 1));
+  var id = setInterval(frame, 5);
   var end = (window.innerWidth - 100);
   function frame() {
     if (pos == end) {
       clearInterval(id);
+      event.stopImmediatePropagation();
       document.getElementById("winner").src = "sailormoonwins.png"; 
     } else {
       pos++;
       elem.style.left = pos + 'px';
     }
-  }
-     event.stopImmediatePropagation();
+  }     
 }
   function myMove2() {
   var elem = document.getElementById("animate2");
