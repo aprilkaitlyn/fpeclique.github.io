@@ -20,6 +20,7 @@ function myMove(event) { //start the race, onclick event
   var pos4 = 0;
   var pos5 = 0;
   
+  //set random speed between 5 & 10 for each guardian
   var speed = Math.floor((Math.random() * 10) + 5);
   var speed2 = Math.floor((Math.random() * 10) + 5);
   var speed3 = Math.floor((Math.random() * 10) + 5);
@@ -27,27 +28,15 @@ function myMove(event) { //start the race, onclick event
   var speed5 = Math.floor((Math.random() * 10) + 5);
   
   //start movement function for each guardian, depending on their random speed
-  var id = setInterval(frame, getNumber);
-  var id2 = setInterval(frame2, getNumber);
-  var id3 = setInterval(frame3, getNumber);
-  var id4 = setInterval(frame4, getNumber);
-  var id5 = setInterval(frame5, getNumber);
+  var id = setInterval(frame, speed);
+  var id2 = setInterval(frame2, speed2);
+  var id3 = setInterval(frame3, speed3);
+  var id4 = setInterval(frame4, speed4);
+  var id5 = setInterval(frame5, speed5);
   
   var end = (window.innerWidth - 100); //image is 100px -> end race at end of screen - 100px
    
-var number = [0,1,2,3,4,5,6,7,8,9,10];
-
-function getNumber() {
-    if (0 === number.length) {
-        alert('Finish')
-    } else {
-        var index = Math.floor(Math.random() * number.length);
-        alert(number[index]);
-        number.splice(index, 1);
-    }
-}
-   
-   function frame() { //sailor moon
+function frame() { //sailor moon
     if (pos == end) {
        clearInterval(id);
        clearInterval(id2);
