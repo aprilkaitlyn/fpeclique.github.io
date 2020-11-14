@@ -28,7 +28,7 @@ function myMove(event) {
     if (pos == end) {
       clearInterval(id);
       document.getElementById("winner").src = "sailormoonwins.png"; 
-      throw new Error("beep");
+      event.stopPropagation();
     } else {
       pos++;
       elem.style.left = pos + 'px';
