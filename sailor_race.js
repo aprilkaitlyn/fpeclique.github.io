@@ -27,7 +27,9 @@ function myMove(event) { //start the race, onclick event
   var speed4 = (Math.random() * 10) + 3;
   var speed5 = (Math.random() * 10) + 3;
   if (speed == speed2)
-  { speed2 += 1; }
+  { speed2 + 0.3; }
+  if (speed3 == speed2)
+  { speed2 + 0.7; }
    
    
   
