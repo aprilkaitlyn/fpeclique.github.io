@@ -23,7 +23,7 @@ function myMove(event) {
    var speed5 = Math.floor((Math.random() * 10) + 5);
   
   var id = setInterval(frame, speed);
-  var id2 = setInterval(frame2, speed2);
+  var id2 = setInterval(frame2, 4);
   var id3 = setInterval(frame3, speed3);
   var id4 = setInterval(frame4, speed4);
   var id5 = setInterval(frame5, speed5);
@@ -51,7 +51,7 @@ function frame2() {
        clearInterval(id3);
        clearInterval(id4);
        clearInterval(id5);
-      document.getElementById("winner").src = "sailorjupiter.png";
+      document.getElementById("winner").src = "sailorjupiter.jpg";
     } 
    else {
       pos2++;
