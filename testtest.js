@@ -72,5 +72,6 @@ function frame5() {
     }
   }
 }
+else {event.stopImmediatePropagation();
 }
-else {event.stopImmediatePropagation();}
+}
