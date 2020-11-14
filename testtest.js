@@ -3,7 +3,7 @@
 function changeLight(e) {
    document.getElementById("light").src = "lights_green.png"; }
   
-function myMove() {
+function myMove(event) {
   var elem = document.getElementById("animate");
   var elem2 = document.getElementById("animate2");
   var elem3 = document.getElementById("animate3");
@@ -23,11 +23,11 @@ function myMove() {
   var id5 = setInterval(frame5, 10);
   
   var end = (window.innerWidth - 100);
-  while (pos != end && pos2 != end && pos3 != end && pos4 != end && pos5 != end) {
   function frame() {
     if (pos == end) {
       clearInterval(id);
       document.getElementById("winner").src = "sailormoonwins.png"; 
+      event.stopImmediatePropagation();
     } else {
       pos++;
       elem.style.left = pos + 'px';
@@ -70,5 +70,4 @@ function frame5() {
       elem5.style.left = pos5 + 'px';
     }
   }
-}
 }
