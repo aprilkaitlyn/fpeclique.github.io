@@ -74,3 +74,4 @@ function frame5() {
   }
 }
 while (pos != end && pos2 != end && pos3 != end && pos4 != end && pos5 != end);
+}
