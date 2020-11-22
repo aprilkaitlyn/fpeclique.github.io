@@ -19,46 +19,49 @@ function myMove(event) { //start the race, onclick event
   var pos3 = 0;
   var pos4 = 0;
   var pos5 = 0;
-  
+
+//function to shuffle the array of speeds   
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
-  // While there remain elements to shuffle...
+  // while there are elements to shuffle...
   while (0 !== currentIndex) {
 
-    // Pick a remaining element...
+    // pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-    // And swap it with the current element.
+    // and swap it with the current element
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
-
-  return array;
+return array;
 }
 
-//give each guardian a speed between 3 (first place) and 7 (last place)
-var arr = [3, 4, 5, 6, 7];
-shuffle(arr);   
+//give each guardian a speed between 4 (first place) and 8 (last place)
+var speedArray = [4, 5, 6, 7, 8];
+
+//shuffle the speeds for a different result each race 
+shuffle(speedArray);   
  
-var speed = arr[0];
-var speed2 = arr[1];
-var speed3 = arr[2];
-var speed4 = arr[3];
-var speed5 = arr[4];
+//assign an index of the array to each speed
+var speed = speedArray[0];
+var speed2 = speedArray[1];
+var speed3 = speedArray[2];
+var speed4 = speedArray[3];
+var speed5 = speedArray[4];
   
-  //start movement function for each guardian, depending on their random speed
-  var id = setInterval(frame, speed);
-  var id2 = setInterval(frame2, speed2);
-  var id3 = setInterval(frame3, speed3);
-  var id4 = setInterval(frame4, speed4);
-  var id5 = setInterval(frame5, speed5);
+//start movement function for each guardian, depending on their random speed
+var id = setInterval(race, speed);
+var id2 = setInterval(race2, speed2);
+var id3 = setInterval(race3, speed3);
+var id4 = setInterval(race4, speed4);
+var id5 = setInterval(race5, speed5);
   
-  var end = (window.innerWidth - 100); //image is 100px -> end race at end of screen - 100px
+var end = (window.innerWidth - 100); //image is 100px -> end race at end of screen - 100px
    
-function frame() { //sailor moon
+function race() { //sailor moon
     if (pos == end) {
        clearInterval(id);
        clearInterval(id2);
@@ -70,7 +73,7 @@ function frame() { //sailor moon
       pos++; //continue race
       elem.style.left = pos + 'px'; } //move guardian icon to the right
 }
-function frame2() { //sailor jupiter
+function race2() { //sailor jupiter
     if (pos2 == end) {
        clearInterval(id);
        clearInterval(id2);
@@ -82,7 +85,7 @@ function frame2() { //sailor jupiter
       pos2++;
       elem2.style.left = pos2 + 'px'; }
 }
-function frame3() { //sailor mars
+function race3() { //sailor mars
     if (pos3 == end) {
       clearInterval(id);
        clearInterval(id2);
@@ -94,7 +97,7 @@ function frame3() { //sailor mars
       pos3++;
       elem3.style.left = pos3 + 'px'; }
 }
-function frame4() { //sailor mercury
+function race4() { //sailor mercury
     if (pos4 == end) {
       clearInterval(id);
        clearInterval(id2);
@@ -106,7 +109,7 @@ function frame4() { //sailor mercury
       pos4++;
       elem4.style.left = pos4 + 'px'; }
 }
-function frame5() { //sailor venus
+function race5() { //sailor venus
     if (pos5 == end) {
       clearInterval(id);
        clearInterval(id2);
