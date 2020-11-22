@@ -21,19 +21,38 @@ function myMove(event) { //start the race, onclick event
   var pos5 = 0;
   
   //set random speed between 3 & 10 for each guardian
-  var speed = (Math.random() * 10) + 3;
-  var speed2 = randomExcluded(3, 10, speed);
-  var speed3 = (Math.random() * 10) + 3;
-  var speed4 = (Math.random() * 10) + 3;
-  var speed5 = (Math.random() * 10) + 3;
+// var speed = (Math.random() * 10) + 3;
+ // var speed2 = (Math.random() * 10) + 3;
+ // var speed3 = (Math.random() * 10) + 3;
+//  var speed4 = (Math.random() * 10) + 3;
+//  var speed5 = (Math.random() * 10) + 3;
 
- function randomExcluded(min, max, excluded) {
-    var n = Math.floor(Math.random() * (max-min) + min);
-    if (n >= excluded) n++;
-    return n;
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
-   
-   
+var arr = [2, 5, 7, 8, 10];
+shuffle(arr);   
+ 
+var speed = arr[0];
+ var speed2 = arr[1];
+ var speed3 = arr[2];
+   var speed4 = arr[3];
+   var speed5 = arr[4];
   
   //start movement function for each guardian, depending on their random speed
   var id = setInterval(frame, speed);
