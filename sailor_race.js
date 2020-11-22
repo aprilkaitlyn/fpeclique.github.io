@@ -38,7 +38,9 @@ function shuffle(array) {
 
   return array;
 }
-var arr = [4, 5, 6, 7, 8, 9, 10];
+
+//give each guardian a speed between 3 (first place) and 7 (last place)
+var arr = [3, 4, 5, 6, 7];
 shuffle(arr);   
  
 var speed = arr[0];
