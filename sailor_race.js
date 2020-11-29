@@ -6,6 +6,7 @@ function changeLight(e) {
 //no # -> sailor moon, 2 -> jupiter, 3 -> mars, 4 -> mercury, 5 -> venus
 
 function myMove(event) { //start the race, onclick event
+  
   //create variable for each guardian's icon
   var elem = document.getElementById("animate");
   var elem2 = document.getElementById("animate2");
@@ -22,19 +23,17 @@ function myMove(event) { //start the race, onclick event
 
 //function to shuffle the array of speeds   
 function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // while there are elements to shuffle...
+  var currentIndex = array.length, temp, randomIndex;
+   
   while (0 !== currentIndex) {
-
-    // pick a remaining element...
+    //pick a remaining speed (see speedArray below)
     randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+    currentIndex -= 1; 
 
-    // and swap it with the current element
-    temporaryValue = array[currentIndex];
+    //swap it with the current element
+    temp = array[currentIndex];
     array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
+    array[randomIndex] = temp;
   }
 return array;
 }
@@ -63,9 +62,10 @@ var end = (window.innerWidth - 100); //image is 100px -> end race at end of scre
    
 function race() { //sailor moon
     if (pos == end) {
+       //when someone reaches the end, stop every guardian!
        clearInterval(id);
        clearInterval(id2);
-       clearInterval(id3); //when someone reaches the end, stop the race
+       clearInterval(id3); 
        clearInterval(id4);
        clearInterval(id5);
        document.getElementById("winner").src = "sailormoon.jpg"; } //display winner's picture by setting image source
